@@ -1,10 +1,4 @@
-if (!window.parsel) {
-  var script = document.createElement("script");
-  script.src = "https://parsel.verou.me/dist/nomodule/parsel.js";
-  document.head.append(script);
-}
-
-function getShadowRootElement(fullSelector, root) {
+window.getShadowRootElement = function(fullSelector, root) {
 
     return queryAllRoots(fullSelector, root);
 
